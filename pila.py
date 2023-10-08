@@ -82,7 +82,7 @@ def seleccionarCancion(pila):
 
             if (cancion == dato["NombreDisco"]):
                 print("Disco seleccionado con éxito...")
-                print("Reproduciendo...")
+                print("Reproduciendo canciones...")
                 time.sleep(dato["Duracion"])
                 print("El disco ha finalizado")
                 cancion_encontrada = True

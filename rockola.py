@@ -12,11 +12,20 @@ while (x != 4):
         nombreDisco = input("Escribe el nombre del disco:\n").capitalize()
         artista = input("Escribe el nombre del Artista:\n").capitalize()
         duracion = int(input("Ingresa la duracion del disco:\n (En formato de entero y representado en segundos)\n"))
+        canciones = int(input("Cuantas canciones componen el album: "))
+        listCanciones = []
+        for cancion in range(canciones):
+            agregarCancion = input("Ingresa el nombre de la cancion: ")
+            listCanciones.append(agregarCancion)
+
         disco = {
             "NombreDisco": nombreDisco,
             "Artista": artista,
+            "Canciones": listCanciones,
             "Duracion": duracion
         }
+
+
         apilar(rockola, disco)
     elif (x == 2):
         print("\n===========================================\n")
