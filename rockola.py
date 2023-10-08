@@ -11,7 +11,7 @@ while (x != 4):
     if (x == 1):
         nombreDisco = input("Escribe el nombre del disco:\n").capitalize()
         artista = input("Escribe el nombre del Artista:\n").capitalize()
-        duracion = int(input("Ingresa la duracion del disco:\n ---En formato de entero---\n"))
+        duracion = int(input("Ingresa la duracion del disco:\n (En formato de entero y representado en segundos)\n"))
         disco = {
             "NombreDisco": nombreDisco,
             "Artista": artista,
